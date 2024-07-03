@@ -9,6 +9,12 @@ header {
   width: 100%;
   background-color: aliceblue;
 }
+a {
+  color: white;
+  &:hover {
+    color: aqua;
+  }
+}
 .heading {
   background-color: aliceblue;
   width: 70%;
@@ -73,7 +79,17 @@ header {
   border-radius: 100%;
   padding: 5px;
 }
-
+.footer {
+  padding: 15px;
+}
+.footer button {
+  color: white;
+  background: teal;
+  border: 1px solid teal;
+  outline: inherit;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
 @media screen and (min-width: 599px) {
   .container {
     margin: 10px auto;
@@ -83,7 +99,7 @@ header {
     align-items: center;
     flex-basis: 40%;
   }
-  .goals{
+  .goals {
     padding: 50px;
   }
   .profile-photo {

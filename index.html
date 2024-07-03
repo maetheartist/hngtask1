@@ -9,7 +9,7 @@
   <body>
     <header>
       <div class="heading">
-        <h1 data-testid="slackDisplayName">Mariam Kosemani</h1>
+        <h1  data-testid="slackDisplayName">Mariam Kosemani</h1>
         <h5>Girl <span>Getter</span></h5>
       </div>
       <nav>
@@ -17,7 +17,7 @@
           <li>Home</li>
           <li>About Me</li>
           <li>Goals</li>
-          <li data-testid="slackEamail">mariamkosemani1@gmail.com</li>
+          <li data-testid="slackEmail">mariamkosemani1@gmail.com</li>
         </ul>
       </nav>
       <div class="container">
@@ -37,10 +37,26 @@
           <img src="./images/myDP.jpg" alt="profile-pic" />
         </div>
       </div>
-      <div>
-        <h4>Want to learn more about the HNG Internship?</h4>
-        <button><a href="http://">click here</a></button>
+      <div class="footer">
+        <h4>Want to learn more about the HNG Internship and other services?</h4>
+        <button>
+          <a data-testid="hngLink" href="http://hng.tech">go to HNG</a>
+        </button>
+        <button>
+          <a data-testid="keywordLink" href="http://keyword.dog"
+            >go to keyword</a
+          >
+        </button>
+        <button id="btn">
+          <a data-testid="scrapeanywebLink" href="http://scrapeanyweb.site"
+            >go to scrapeany</a
+          >
+        </button>
       </div>
     </header>
+
+    <script src="index.js">
+      
+    </script>
   </body>
 </html>
