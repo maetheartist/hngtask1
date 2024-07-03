@@ -3,19 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width= , initial-scale=1.0" />
-    <title>My App</title>
+    <title>My Goals App</title>
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <div>
+    <header>
       <div class="heading">
-        <h1>Mae's Corner</h1>
+        <h1 data-testid="slackDisplayName">Mariam Kosemani</h1>
         <h5>Girl <span>Getter</span></h5>
       </div>
+      <nav>
+        <ul class="heading nav-list">
+          <li>Home</li>
+          <li>About Me</li>
+          <li>Goals</li>
+          <li data-testid="slackEamail">mariamkosemani1@gmail.com</li>
+        </ul>
+      </nav>
+      <div class="container">
+        <ul class="goals">
+          My Goals for the next 2 years @
+          <span
+            ><a data-testid="hngLink" href="http://hng.tech/learn"
+              >HNG11</a
+            ></span
+          >
+          <li>Become a frontend dev for a reputable company.</li>
+          <li>Become better in my skills than I currently am.</li>
+          <li>Make an inpact in the ecosystem</li>
+        </ul>
 
-      <div>
-        <img src="./images/pfp.jpg" alt="profile-pic" />
+        <div class="profile-photo">
+          <img src="./images/myDP.jpg" alt="profile-pic" />
+        </div>
       </div>
-    </div>
+      <div>
+        <h4>Want to learn more about the HNG Internship?</h4>
+        <button><a href="http://">click here</a></button>
+      </div>
+    </header>
   </body>
 </html>

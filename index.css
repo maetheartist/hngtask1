@@ -2,13 +2,21 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  background-color: aliceblue;
 }
 .heading {
+  background-color: aliceblue;
   width: 70%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px;
 }
 .heading h5 {
   font-size: 12px;
@@ -18,5 +26,69 @@
   height: 70px;
   text-align: center;
   padding: 20px;
+  outline: 1px solid teal;
   border-radius: 100%;
+}
+.heading h5 span {
+  color: teal;
+}
+.nav-list {
+  width: 90%;
+  background-color: rgb(235, 235, 235);
+  cursor: pointer;
+  &:hover {
+    color: teal;
+  }
+}
+
+.container {
+  width: 90%;
+  padding: 5%;
+  margin: 0 auto;
+  border-radius: 5px;
+  display: block;
+  background-color: teal;
+}
+.container li {
+  list-style: circle;
+}
+.goals {
+  padding: 50px;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+.profile-photo {
+  width: 200px;
+  height: 200px;
+
+  /* margin: 20px auto; */
+  border-radius: 100%;
+  background-color: white;
+}
+.profile-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+@media screen and (min-width: 599px) {
+  .container {
+    margin: 10px auto;
+    width: 95%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-basis: 40%;
+  }
+  .goals{
+    padding: 50px;
+  }
+  .profile-photo {
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+  }
 }
